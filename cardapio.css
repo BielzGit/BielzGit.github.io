@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+}
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+}
+
+nav button {
+  font-size: 30px;
+  color: rgb(255, 220, 23);
+  background-color: rgba(255, 86, 2, 0.963);
+  border-radius: 13px;
+  width: 78px;
+  height: 70px;
+  border: none;
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+nav img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  filter: blur(0);
+  border: 2px solid white;
+}
+
+nav a {
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(239, 209, 37);
+  background-color: rgb(255, 102, 0);
+  border-radius: 17px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid rgb(56, 55, 55);
+  width: 12%;
+}
+
+#cds a {
+  color: rgb(233, 202, 25);
+  background-color: rgb(255, 68, 0);
+}
+
+nav a:hover {
+  background-color: rgba(231, 82, 8, 0.963);
+  color: rgb(228, 195, 10);
+  transition: all 0.4s ease;
+  transform: scale(1.05);
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 45px;
+  color: rgb(255, 166, 0);
+}
+#bloco {
+  display: flex;
+  justify-content: center;
+  gap: 17%;
+  margin-top: 5%;
+  transition: all 0.5s ease;
+}
+#bloco a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#food1 img,
+#food2 img {
+  width: 50vh;
+  height: 35vh;
+}
+#food1,
+#food2 {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 7vh;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+#food1:hover,
+#food2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#bloco p {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+footer {
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.logo2 {
+  text-align: center;
+}
+
+.logo2 p {
+  font-size: 28px;
+  color: white;
+  font-style: italic;
+}
+
+.logo2 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.navg h1,
+.contato h1,
+.func h1 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.navg a {
+  font-size: 25px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 7px;
+}
+
+li {
+  color: white;
+  margin-left: 20px;
+}
+
+.contato img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.contato img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.func p {
+  color: white;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.msg {
+  width: 100%;
+  text-align: center;
+}
+
+.msg p {
+  color: white;
+  font-size: 20px;
+}
+/* RESPONSIVO */
+
+@media (max-width: 1024px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h3 {
+    font-size: 28px;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #slogan {
+    left: 5%;
+  }
+
+  header h1 {
+    font-size: 45px;
+  }
+
+  header h3 {
+    font-size: 24px;
+  }
+
+  .carrossel {
+    height: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

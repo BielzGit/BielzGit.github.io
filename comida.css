@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+/* HEADER */
+
+header {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+}
+
+nav button {
+  font-size: 30px;
+  color: rgb(255, 220, 23);
+  background-color: rgba(255, 86, 2, 0.963);
+  border-radius: 13px;
+  width: 78px;
+  height: 70px;
+  border: none;
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+nav img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  filter: blur(0);
+  border: 2px solid white;
+}
+
+nav a {
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(239, 209, 37);
+  background-color: rgb(255, 102, 0);
+  border-radius: 17px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid rgb(56, 55, 55);
+  width: 12%;
+}
+
+/* MAIN */
+
+.opcao {
+  display: flex;
+  margin-right: 77px;
+}
+main img {
+  width: 45%;
+  height: 65vh;
+  margin-top: 7%;
+  margin-left: 15vh;
+  border-radius: 20px;
+  box-shadow: 4px 10px 10px;
+  border: 2px solid white;
+}
+
+.descricao {
+  margin-top: 10%;
+  margin-left: 80px;
+}
+
+.descricao p {
+  color: aliceblue;
+  font-size: 74px;
+  font-style: italic;
+  margin-left: 20px;
+}
+#dsc {
+  font-size: 22px;
+  margin-top: 48px;
+}
+.descricao label {
+  color: aliceblue;
+  font-size: 50px;
+  margin-left: 18px;
+}
+.descricao input {
+  width: 32vh;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 255);
+}
+#cmp {
+  background-color: red;
+  color: rgb(199, 170, 170);
+}
+#adc {
+  background-color: orangered;
+  color: rgb(255, 225, 2);
+  margin-left: 17px;
+}
+.descricao input:hover {
+  cursor: pointer;
+}
+/* FOOTER */
+
+footer {
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.logo2 {
+  text-align: center;
+}
+
+.logo2 p {
+  font-size: 28px;
+  color: white;
+  font-style: italic;
+}
+
+.logo2 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.navg h1,
+.contato h1,
+.func h1 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.navg a {
+  font-size: 25px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 7px;
+}
+
+li {
+  color: white;
+  margin-left: 20px;
+}
+
+.contato img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.contato img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.func p {
+  color: white;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.msg {
+  width: 100%;
+  text-align: center;
+}
+
+.msg p {
+  color: white;
+  font-size: 20px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h3 {
+    font-size: 28px;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #slogan {
+    left: 5%;
+  }
+
+  header h1 {
+    font-size: 45px;
+  }
+
+  header h3 {
+    font-size: 24px;
+  }
+
+  .carrossel {
+    height: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
